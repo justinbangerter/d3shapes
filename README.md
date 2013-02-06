@@ -5,6 +5,7 @@ A few irregualr shapes that can be imported into your D3 visualizations.  This s
 
 Available Symbols
 =================
+![Mars, Venus, Wedding Ring](shapes.png)
 * Mars
 * Venus
 * Wedding Ring
