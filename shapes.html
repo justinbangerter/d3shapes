@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>D3 Test</title>
+    <script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+    <script type="text/javascript" src="d3shapes.js"></script>
+</head>
+<body>
+<div id="target"></div>
+<script>
+    var w = 150;
+    var h = 150;
+    var x = 40;
+    var d = 15;
+    var dataset = [
+        { r:25, p:[x, x] },
+        { r:20, p:[x + d, x + d] },
+        { r:15, p:[x + 2 * d, x + 2 * d] },
+        { r:10, p:[x + 3 * d, x + 3 * d] },
+        { r:5, p:[x + 3.75 * d, x + 3.75 * d]   }
+    ];
+
+    var mars = d3.select("#target")
+            .insert("svg:svg", "form")
+            .attr("width", w)
+            .attr("height", h)
+            .selectAll("g")
+            .data(dataset)
+            .enter();
+    d3shapes.marsSvg(mars);
+
+    var venus = d3.select("#target")
+            .insert("svg:svg", "form")
+            .attr("width", w)
+            .attr("height", h)
+            .selectAll("g")
+            .data(dataset)
+            .enter();
+    d3shapes.venusSvg(venus);
+
+    var weddingRing = d3.select("#target")
+            .insert("svg:svg", "form")
+            .attr("width", w)
+            .attr("height", h)
+            .selectAll("g")
+            .data(dataset)
+            .enter();
+    d3shapes.weddingRingSvg(weddingRing);
+</script>
+</body>
+</html>
+
