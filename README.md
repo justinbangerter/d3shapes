@@ -1,7 +1,7 @@
 d3shapes
 ========
 
-A few irregualr shapes that can be imported into your D3 visualizations.  This sprang from a special need for a non-profit client.
+A few irregular shapes that can be imported into your D3 visualizations.  This sprang from a special need for a non-profit client.
 
 Available Symbols
 =================
